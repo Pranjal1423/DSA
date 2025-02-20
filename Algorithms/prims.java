@@ -77,3 +77,62 @@ public class Prims {
         primMST(graph, v);
     }
 }
+// Time Complexity: O(V^2) where V is the number of vertices in the graph.
+// Space Complexity: O(V^2) where V is the number of vertices in the graph.
+// Sample Input/Output:
+// Enter the number of vertices :
+// 5
+// Enter the number of edges:
+// 7
+// Enter the vertex 1:
+// 0
+// Enter the vertex 2:
+// 1
+// Enter the weight of the edge:
+// 2
+// Enter the vertex 1:
+// 0
+// Enter the vertex 2:
+// 3
+// Enter the weight of the edge:
+// 3
+// Enter the vertex 1:  
+// 1
+// Enter the vertex 2:  
+// 2
+// Enter the weight of the edge:
+// 1
+// Enter the vertex 1:
+// 1
+// Enter the vertex 2:
+// 3    
+// Enter the weight of the edge:
+// 4
+// Enter the vertex 1:
+// 1
+// Enter the vertex 2:
+// 4
+// Enter the weight of the edge:
+// 5    
+// Enter the vertex 1:
+// 2
+// Enter the vertex 2:
+// 3
+// Enter the weight of the edge:
+// 6
+// Enter the vertex 1:
+// 3
+// Enter the vertex 2:
+// 4    
+// Enter the weight of the edge:
+// 7
+// Edge 	Weight
+// 0 - 1	2
+// 1 - 2	1
+// 0 - 3	3
+// 1 - 4	5
+// Total Weight: 11
+//
+// Note: The input graph is represented as an adjacency matrix. The weight of the edge between vertices v1 and v2 is stored in graph[v1][v2] and graph[v2][v1]. The weight of the edge is -1 if there is no edge between the vertices.  
+// The output displays the edges in the Minimum Spanning Tree (MST) along with their weights and the total weight of the MST.
+// The above code demonstrates the implementation of Prim's algorithm to find the Minimum Spanning Tree (MST) of a weighted undirected graph. The algorithm starts with an empty MST and repeatedly adds the edge with the minimum weight that connects a vertex in the MST to a vertex outside the MST. The process continues until all vertices are included in the MST. The algorithm uses an array to track the minimum edge weight for each vertex and another array to mark whether the vertex is in the MST. It also maintains an array to store the parent of each vertex in the MST. The time complexity of the algorithm is O(V^2), where V is the number of vertices in the graph. The space complexity is also O(V^2) due to the adjacency matrix representation of the graph. The code takes input for the number of vertices and edges in the graph, as well as the weight of each edge. It then computes and prints the edges in the MST along with their weights and the total weight of the MST.// Path: Algorithms/prims.java

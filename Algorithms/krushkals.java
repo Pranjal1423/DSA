@@ -92,3 +92,11 @@ public class KruskalAlgorithm {
         graph.kruskalMST();
     }
 }
+
+// Output
+// Edges in MST:
+// 2 - 3 : 4
+// 0 - 3 : 5
+// 0 - 1 : 10
+```
+
